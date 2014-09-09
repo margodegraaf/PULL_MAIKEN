@@ -16,7 +16,7 @@ function Persoon(name) {
 
 /* gebruik functie voor gegevens */
 
-Persoon('bob');
+Persoon('Bob');
 Persoon('Susan');
 
 
@@ -34,7 +34,7 @@ Persoon.prototype.eat = function() {
 Maak nu hetzelfde object, met dezelfde properties en methods aan met een object literal */
 
 var PersoonLiteral = {
-	name: "bob",
+	name: "Bob",
 	speak: function () { console.log("My name is " + this.name + ". (Object Literal)"); },
 	walk: function() { console.log(this.name + " walks through town. (Object Literal)"); },
 	eat: function() { console.log(this.name + " eats a pancake. (Object Literal)"); }
