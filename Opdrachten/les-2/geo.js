@@ -11,7 +11,12 @@ var cmdAanGeo = cmdAanGeo || {};
 
 	// Alle andere modules initialiseren
 	cmdAanGeo.controller = {
-		init: function() {}
+		init: function() {
+			cmdAanGeo.gps();
+			cmdAanGeo.map();
+			cmdAanGeo.debug();
+			cmdAanGeo.helper():
+		}
 	};
 
 	// Alle GPS functions
@@ -42,5 +47,8 @@ var cmdAanGeo = cmdAanGeo || {};
 	};
 
 }());
+
+// App init
+cmdAanGeo.controller();
 
 // Verwijderen door Margo
