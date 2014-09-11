@@ -12,10 +12,10 @@ var cmdAanGeo = cmdAanGeo || {};
 	// Alle andere modules initialiseren
 	cmdAanGeo.controller = {
 		init: function() {
-			cmdAanGeo.gps();
-			cmdAanGeo.map();
-			cmdAanGeo.debug();
-			cmdAanGeo.helper():
+			cmdAanGeo.gps(); 	// Object aanroepen ipv functie | MARGO DE GRAAF
+			cmdAanGeo.map();	// Object aanroepen ipv functie | MARGO DE GRAAF
+			cmdAanGeo.debug();	// Object aanroepen ipv functie | MARGO DE GRAAF
+			cmdAanGeo.helper():	// Object aanroepen ipv functie | MARGO DE GRAAF
 		}
 	};
 
@@ -49,6 +49,16 @@ var cmdAanGeo = cmdAanGeo || {};
 }());
 
 // App init
-cmdAanGeo.controller();
+cmdAanGeo.controller(); 
+/* 
+Verander:
+cmdAanGeo.controller(); 	=> 	cmdAanGeo.controller.init(); 
 
-// Verwijderen door Margo
+Uitleg:
+De zin "cmdAanGeo.controller();" geeft een error omdat je een functie aanroept, terwijl je het object met methode moet aanroepen.
+
+Auteur:
+MARGO DE GRAAF
+*/
+
+	
